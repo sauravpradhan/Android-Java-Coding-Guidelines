@@ -8,12 +8,12 @@ Derived from
 4) What to include on GitIgnore / SVNIgnore
 
 
-#Line Length
+# Line Length
 
 Stick within the 120 char line limit. Use line breaks to split up code according to the style guidelines
 
 
-#Id names
+# Id names
 
 Layout resource ids should use the following naming convention where possible:
 <layout name>_<object type>_<object name>
@@ -23,7 +23,7 @@ Layout resource ids should use the following naming convention where possible:
     hotel_item_imageview_star_rating
 
 
-#Variable Declarations(General practice)
+# Variable Declarations(General practice)
 
 Java best practices state "one declaration per line".
 
@@ -61,13 +61,13 @@ Alternatives to catching generic Exception:
     }
 
 
-#Don't use finalizers
+# Don't use finalizers
 
 Finalizers are a way to have a chunk of code executed when an object is garbage collected. 
 While they can be handy for doing cleanup (particularly of external resources), 
 there are no guarantees as to when a finalizer will be called (or even that it will be called at all). 
 
-#Order of import statements
+# Order of import statements
 
 The ordering of import statements is:
 1)Android imports
@@ -75,23 +75,23 @@ The ordering of import statements is:
 3)java and javax
 
 
-#Spaces rules for indentation
+# Spaces rules for indentation
 
 >Use four (4) space indents for blocks and never tabs.
 >Use eight (8) space indents for line wraps, including function calls and assignments. 
 
 
-#Log sparingly
+# Log sparingly
 
 > https://source.android.com/setup/contribute/code-style#log-sparingly
 
 
-#Constants
+# Constants
 
 Its always better to keep constants in a separate file declaring static variables for each of them to increase code read-ability.
 
 
-#What to include on GitIgnore / SVNIgnore or what files to commit 
+# What to include on GitIgnore / SVNIgnore or what files to commit 
 
 >Ignoring folders:
     .svn
