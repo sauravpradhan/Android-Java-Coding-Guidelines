@@ -82,14 +82,14 @@ Its always better to keep constants in a separate file declaring static variable
 
 #What to include on GitIgnore / SVNIgnore or what files to commit 
 Ignoring folders:
-    .svn
-    .idea
-    .gradle
-    Build (From root and from inside app directory/ Very important to ignore as this is generated in every build and will conflicts the diffs later)
+.svn
+.idea
+.gradle
+Build (From root and from inside app directory/ Very important to ignore as this is generated in every build and will conflicts the diffs later)
 Ignore Files:
-    .DS_Store (If MAC OSX)
-    "local.properties" file
-    "APP_NAME.iml"
+.DS_Store (If MAC OSX)
+"local.properties" file
+"APP_NAME.iml"
     
 
 
