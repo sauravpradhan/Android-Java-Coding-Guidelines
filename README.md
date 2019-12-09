@@ -1,8 +1,8 @@
 # Android-Java-Coding-Guidelines
 Android/Java/AOSP Coding Guidelines
 
-#Derived from
 
+#Derived from
 1) https://github.com/ustwo/android-coding-standards
 2) https://source.android.com/setup/contribute/code-style
 3) And some good to follow Rules 
@@ -10,11 +10,10 @@ Android/Java/AOSP Coding Guidelines
 
 
 #Line Length
-
 Stick within the 120 char line limit. Use line breaks to split up code according to the style guidelines
 
-#Id names
 
+#Id names
 Layout resource ids should use the following naming convention where possible:
 <layout name>_<object type>_<object name>
 E.g.
@@ -22,8 +21,8 @@ E.g.
 home_listview_hotels
 hotel_item_imageview_star_rating
 
-#Variable Declarations(General practice)
 
+#Variable Declarations(General practice)
 Java best practices state "one declaration per line".
 Member Variable within the scope of class must be declared as:
 <m><objectname><objecttype>
@@ -56,9 +55,9 @@ Alternatives to catching generic Exception:
     } catch (ClassNotFoundException | NoSuchMethodException e) {
         ...
     }
-    
-#Don't use finalizers
 
+
+#Don't use finalizers
 Finalizers are a way to have a chunk of code executed when an object is garbage collected. While they can be handy for doing cleanup (particularly of external resources), there are no guarantees as to when a finalizer will be called (or even that it will be called at all). 
 
 #Order import statements
@@ -67,21 +66,21 @@ The ordering of import statements is:
 2)Imports from third parties (com, junit, net, org)
 3)java and javax
 
-#Use spaces for indentation
 
+#Use spaces for indentation
 We use four (4) space indents for blocks and never tabs. When in doubt, be consistent with the surrounding code.
 We use eight (8) space indents for line wraps, including function calls and assignments. 
 
-#Log sparingly
 
+#Log sparingly
 https://source.android.com/setup/contribute/code-style#log-sparingly
 
-#Constants
 
+#Constants
 Its always better to keep constants in a separate file declaring static variables for each of them to increase code read-ability.
 
-#What to include on GitIgnore / SVNIgnore or what files to commit 
 
+#What to include on GitIgnore / SVNIgnore or what files to commit 
 Ignoring folders:
     .svn
     .idea
