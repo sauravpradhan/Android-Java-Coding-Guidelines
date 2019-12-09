@@ -1,5 +1,7 @@
 # Android-Java-Coding-Guidelines
+
 Derived from
+
 1) https://github.com/ustwo/android-coding-standards
 2) https://source.android.com/setup/contribute/code-style
 3) And some good to follow Rules 
@@ -7,10 +9,12 @@ Derived from
 
 
 #Line Length
+
 Stick within the 120 char line limit. Use line breaks to split up code according to the style guidelines
 
 
 #Id names
+
 Layout resource ids should use the following naming convention where possible:
 <layout name>_<object type>_<object name>
     E.g.
@@ -20,7 +24,9 @@ Layout resource ids should use the following naming convention where possible:
 
 
 #Variable Declarations(General practice)
+
 Java best practices state "one declaration per line".
+
 Member Variable within the scope of class must be declared as:
     <m><objectname><objecttype>
     EX: mDisableAllSwitch
@@ -29,6 +35,7 @@ Keep the scope of local variables to a minimum
 
 
 #Don't catch generic exception
+
 Not Recomended:
 
     try {
@@ -55,9 +62,13 @@ Alternatives to catching generic Exception:
 
 
 #Don't use finalizers
-Finalizers are a way to have a chunk of code executed when an object is garbage collected. While they can be handy for doing cleanup (particularly of external resources), there are no guarantees as to when a finalizer will be called (or even that it will be called at all). 
+
+Finalizers are a way to have a chunk of code executed when an object is garbage collected. 
+While they can be handy for doing cleanup (particularly of external resources), 
+there are no guarantees as to when a finalizer will be called (or even that it will be called at all). 
 
 #Order of import statements
+
 The ordering of import statements is:
 1)Android imports
 2)Imports from third parties (com, junit, net, org)
@@ -65,25 +76,30 @@ The ordering of import statements is:
 
 
 #Spaces rules for indentation
-Use four (4) space indents for blocks and never tabs.
-Use eight (8) space indents for line wraps, including function calls and assignments. 
+
+>Use four (4) space indents for blocks and never tabs.
+>Use eight (8) space indents for line wraps, including function calls and assignments. 
 
 
 #Log sparingly
-https://source.android.com/setup/contribute/code-style#log-sparingly
+
+> https://source.android.com/setup/contribute/code-style#log-sparingly
 
 
 #Constants
+
 Its always better to keep constants in a separate file declaring static variables for each of them to increase code read-ability.
 
 
 #What to include on GitIgnore / SVNIgnore or what files to commit 
-Ignoring folders:
+
+>Ignoring folders:
     .svn
     .idea
     .gradle
     Build (From root and from inside app directory/ Very important to ignore as this is generated in every build and will conflicts the diffs later)
-Ignore Files:
+
+>Ignore Files:
     .DS_Store (If MAC OSX)
     "local.properties" file
     "APP_NAME.iml"
