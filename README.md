@@ -17,21 +17,18 @@ Stick within the 120 char line limit. Use line breaks to split up code according
 
 Layout resource ids should use the following naming convention where possible:
 <layout name>_<object type>_<object name>
-    E.g.
-    
+    E.g.    
     home_listview_hotels
     hotel_item_imageview_star_rating
 
 
 # Variable Declarations(General practice)
 
-Java best practices state "one declaration per line".
-
-Member Variable within the scope of class must be declared as:
+>Java best practices state "one declaration per line".
+>Member Variable within the scope of class must be declared as:
     <m><objectname><objecttype>
     EX: mDisableAllSwitch
-
-Keep the scope of local variables to a minimum
+>Keep the scope of local variables to a minimum
 
 
 #Don't catch generic exception
@@ -46,7 +43,7 @@ Not Recomended:
       } catch (Exception e) {                 // I'll just catch all exceptions
           handleError();                      // with one generic handler!
       }
-
+      
 It obscures the failure handling properties of your code, meaning if someone adds a new type of Exception in the code you're calling, the compiler won't help you realize you need to handle the error differently.
 
 If Required:
@@ -63,13 +60,13 @@ Alternatives to catching generic Exception:
 
 # Don't use finalizers
 
-Finalizers are a way to have a chunk of code executed when an object is garbage collected. 
+>Finalizers are a way to have a chunk of code executed when an object is garbage collected. 
 While they can be handy for doing cleanup (particularly of external resources), 
 there are no guarantees as to when a finalizer will be called (or even that it will be called at all). 
 
 # Order of import statements
 
-The ordering of import statements is:
+>The ordering of import statements is:
 1)Android imports
 2)Imports from third parties (com, junit, net, org)
 3)java and javax
