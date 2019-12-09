@@ -80,7 +80,7 @@ there are no guarantees as to when a finalizer will be called (or even that it w
 
 # Log sparingly
 
-> https://source.android.com/setup/contribute/code-style#log-sparingly
+> [AOSP Link](https://source.android.com/setup/contribute/code-style#log-sparingly)
 
 
 # Constants
